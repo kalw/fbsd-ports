@@ -70,9 +70,9 @@ ports_trees="default"
 use_zfs="no"
 poudriere_ports_mountpoint="/usr/local/poudriere/ports"
 default_poudriere_tree="default"
-default_merge_from="freebsd beat7"
+default_merge_from="freebsd custom"
 EOF'
-sudo bash -c 'cat > /usr/local/etc/portshaker.d/fbsd-ports <<"EOF"
+sudo bash -c 'cat > /usr/local/etc/portshaker.d/custom <<"EOF"
 #!/bin/sh
 shift
 . /usr/local/share/portshaker/portshaker.subr
